@@ -1,11 +1,12 @@
-@import "tailwindcss";
-
-:root { --cream:#f4f0e8; --paper:#fbf9f4; --ink:#20211e; --orange:#f05a28; --muted:#6b6c64; --line:rgba(32,33,30,.16); }
+:root { --cream:#f4f0e8; --paper:#fbf9f4; --ink:#20211e; --orange:#f05a28; --muted:#6b6c64; --line:rgba(32,33,30,.16); --font-display:"Manrope",Arial,sans-serif; --font-body:"DM Sans",Arial,sans-serif; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; background:var(--cream); color:var(--ink); font-family:var(--font-body),Arial,sans-serif; }
 a { color:inherit; text-decoration:none; }
 img { display:block; width:100%; }
+.skip-link { position:fixed; left:16px; top:-60px; z-index:100; padding:12px 18px; color:white; background:var(--orange); font-weight:800; }
+.skip-link:focus { top:16px; }
+.desktop-nav a.current { color:var(--orange); }
 .shell { width:min(1380px,calc(100% - 80px)); margin-inline:auto; }
 .emergency-bar { background:var(--ink); color:white; font-size:12px; letter-spacing:.08em; text-transform:uppercase; }
 .emergency-inner { min-height:35px; display:flex; align-items:center; justify-content:space-between; }
