@@ -40,3 +40,8 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+images/alarms/image*.png
+images/cctv/image*.png
+images/electric-fence/image*.png
+images/garage-doors/image*.png
+images/gate-motor/image*.png
