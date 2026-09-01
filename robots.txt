@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://www.gaterepairspta.co.za/sitemap.xml
+
+# Slow down aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
