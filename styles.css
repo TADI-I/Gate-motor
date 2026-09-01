@@ -335,15 +335,15 @@ td:not(:first-child) { font-weight:700; }
   .nav-cta { min-height:42px; padding:0 14px; gap:10px; font-size:11px; }
   .mobile-menu { margin-left:-20px; }
   .nav-cta { display:none; }
-  .poster-hero { min-height:720px; display:flex; flex-direction:column; }
-  .poster-background { position:absolute; inset:auto 0 0; height:315px; object-position:right center; }
-  .poster-copy { position:relative; width:100%; min-height:430px; padding:52px 18px 38px; justify-content:flex-start; background:#f6f2e9; }
-  .poster-rule { width:100%; height:3px; margin-bottom:20px; }
-  .poster-rule.short { margin:17px 0 14px; }
-  .poster-copy h1 { font-size:clamp(56px,18vw,76px); line-height:.84; }
-  .poster-copy>p { font-size:21px; }
-  .poster-badge { margin-top:19px; font-size:14px; padding:10px 14px; }
-  .poster-badge strong { font-size:19px; }
+  .poster-hero { min-height:0; display:flex; flex-direction:column; }
+  .poster-background { position:relative; inset:auto; order:2; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; object-position:right center; }
+  .poster-copy { position:relative; order:1; width:100%; min-height:0; padding:38px 18px 32px; justify-content:flex-start; background:#f6f2e9; }
+  .poster-rule { width:76%; height:3px; margin-bottom:18px; }
+  .poster-rule.short { width:76%; margin:16px 0 13px; }
+  .poster-copy h1 { font-size:clamp(48px,15vw,64px); line-height:.86; letter-spacing:-.065em; }
+  .poster-copy>p { font-size:clamp(18px,5.5vw,22px); line-height:1.15; }
+  .poster-badge { margin-top:18px; gap:10px; font-size:13px; padding:10px 13px; }
+  .poster-badge strong { font-size:18px; }
   .hero-grid { display:flex; flex-direction:column; }
   .hero-copy { padding:70px 0 45px; }
   .hero h1 { font-size:clamp(48px,14vw,68px); }
@@ -403,5 +403,14 @@ td:not(:first-child) { font-weight:700; }
   .footer-grid>div:last-child { grid-column:auto; }
   .footer-bottom { flex-direction:column; gap:10px; }
   .floating-whatsapp { right:14px; bottom:14px; }
+}
+@media (max-width:380px) {
+  .emergency-inner { font-size:7.5px; letter-spacing:.045em; }
+  .emergency-inner i { width:6px; height:6px; }
+  .poster-copy { padding-top:32px; }
+  .poster-copy h1 { font-size:46px; }
+  .poster-badge b { display:none; }
+  .proof-grid strong { font-size:16px; }
+  .proof-grid span { font-size:9px; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*:before,*:after { transition:none!important; } }
